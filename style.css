@@ -1,0 +1,170 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+
+/* FONTS & COLORS */
+body {
+  font-family: 'Georgia', serif;
+  background: #f7f6f2;
+  color: #3d4f43;
+}
+
+/* HERO */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:italic,wght@0,400;1,700&family=Lato:wght@300&display=swap');
+.hero {
+  height: 100vh;
+  background: url("./images/together.jpg") center/cover no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.overlay h1 {
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+ 
+}
+.note{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.overlay p {
+  font-size: 1.3rem;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  border: white solid 3px;
+  padding: 25px;
+  
+}
+
+.overlay span {
+  margin-top: 15px;
+  display: block;
+  font-style: italic;
+}
+/* floral background */
+.floral-bg {
+  position: relative;
+  background:
+    
+    url("./images/floral.png") bottom right no-repeat,
+    #f7f6f2;
+  background-size: 600px, ;
+  padding: 100px 20px;
+}
+
+
+
+/* SECTIONS */
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #5c6f64;
+}
+
+.section p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  
+}
+
+.floral-top {
+  position: relative;
+  background-color: #f7f6f2;
+  padding-top: 140px;
+  text-align: center;
+}
+
+/* FLOWER IMAGE */
+.floral-top::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 420px;
+  height: 280px;
+  background: url("") center/contain no-repeat;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+
+/* DETAILS */
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 30px;
+  background: #eef1ec;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: #6a8a78;
+  margin-bottom: 10px;
+}
+
+/* RSVP */
+.rsvp {
+  background: #dfe6dd;
+}
+
+.rsvp button {
+  margin-top: 25px;
+  padding: 15px 45px;
+  border: none;
+  background: #8fae9c;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rsvp button:hover {
+  background: #6f907d;
+}
+
+/* FOOTER */
+footer {
+  padding: 25px;
+  background: #5c6f64;
+  color: #fff;
+  text-align: center;
+}
